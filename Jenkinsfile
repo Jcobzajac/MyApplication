@@ -15,7 +15,9 @@ pipeline {
             }
             steps {
                 script {
-                    majorMinor="1.0"
+                    sh "git fetch http://${GITLAB_USR}:${GITLAB_PSW}@${GITLAB_URL} --tags"
+                    
+                    majorMinor = sh(script: "git branch -r | grep 'feature' | sed 's:.*/::'", returnStdout: true).trim()
 
                     previousTag = sh(script: "git describe --tags --abbrev=0 | grep -E '^$majorMinor' || true", returnStdout: true).trim()
 
@@ -25,6 +27,8 @@ pipeline {
                         patch = (previousTag.tokenize(".")[2].toInteger() + 1).toString()
                     }
                     env.VERSION = majorMinor + "." + patch
+
+                    echo env.VERSION
 
                 }
             }
