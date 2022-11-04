@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/form.css">
+    <title>
+        Form
+    </title>
+</head>
+  
+<body>
+    {% include 'nav.html' %}
+    <h1>Certification</h1>
+  
+    <!-- Create Form -->
+    <form id="form" method="post">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   name="name"
+                   placeholder="Enter your name" />
+        </div>
+  
+        <div class="form-control">
+            <label for="surname" id="label-surname">
+                Surname
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="surname"
+                   name="surname"
+                   placeholder="Enter your surname" />
+        </div>
+  
+        <div class="form-control">
+            <label for="id" id="label-id">
+              Personal ID Number
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   name="id"
+                   placeholder="Enter your Personal ID Number" />
+        </div>
+        <h2> Choose the certifications - from the most desired to the least</h2>
+        <div class="form-control">
+            <label for="first_place" id="label-first_place">
+                First Place
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="first_place">
+                <option value="Certified Kubernetes Administrator">Certified Kubernetes Administrator</option>
+                <option value="Azure Administrator Associate">Azure Administrator Associate</option>
+                <option value=" Google Cloud Associate Cloud Engineer">
+                  Google Cloud Associate Cloud Engineer
+                </option>
+                <option value="AWS Certified Solutions Architect">AWS Certified Solutions Architect</option>
+            </select>
+        </div>
+        <div class="form-control">
+          <label for="second_place" id="second_place">
+              Second Place
+          </label>
+           
+          <!-- Dropdown options -->
+          <select name="second_place" id="second_place">
+            <option value="Certified Kubernetes Administrator">Certified Kubernetes Administrator</option>
+            <option value="Azure Administrator Associate">Azure Administrator Associate</option>
+            <option value=" Google Cloud Associate Cloud Engineer">
+              Google Cloud Associate Cloud Engineer
+            </option>
+            <option value="AWS Certified Solutions Architect">AWS Certified Solutions Architect</option>
+          </select>
+      </div>
+      <div class="form-control">
+        <label for="third_place" id="third_place">
+            Third Place
+        </label>
+         
+        <!-- Dropdown options -->
+        <select name="third_place" id="third_place">
+            <option value="Certified Kubernetes Administrator">Certified Kubernetes Administrator</option>
+                <option value="Azure Administrator Associate">Azure Administrator Associate</option>
+                <option value=" Google Cloud Associate Cloud Engineer">
+                  Google Cloud Associate Cloud Engineer
+                </option>
+                <option value="AWS Certified Solutions Architect">AWS Certified Solutions Architect</option>
+        </select>
+    </div>
+    <div class="form-control">
+      <label for="fourth_place" id="fourth_place">
+          Fourth place
+      </label>
+       
+      <!-- Dropdown options -->
+      <select name="fourth_place" id="fourth_place">
+        <option value="Certified Kubernetes Administrator">Certified Kubernetes Administrator</option>
+        <option value="Azure Administrator Associate">Azure Administrator Associate</option>
+        <option value=" Google Cloud Associate Cloud Engineer">
+          Google Cloud Associate Cloud Engineer
+        </option>
+        <option value="AWS Certified Solutions Architect">AWS Certified Solutions Architect</option>
+      </select>
+    </div>
+  
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+  
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+  
+</html>

@@ -1,0 +1,40 @@
+/* HOME PAGE */
+
+body {
+    background-color: #fff;
+    font-family: Verdana;
+    text-align: center;
+}
+
+.kubeimg {
+    height: 350px;
+    width: 350px;
+}
+
+.start {
+    height: 300px;
+    width: 300px;
+}
+
+.div {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+
+h1 {
+    color:  #00539CFF;
+    font-size: 70px;
+    margin-left: 60%;
+    margin-top: 1%;
+}
+
+.flex-container > img {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}

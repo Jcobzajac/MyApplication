@@ -1,0 +1,79 @@
+  /* DECLARATION */  
+      
+body {
+  background-color: #fff;
+  font-family: Verdana;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  width: 100px; 
+  height: 100px; 
+  flex-wrap: wrap;
+}
+
+.container .box {
+  flex-basis: 50%;
+}
+
+.start {
+  width: 200px;
+  height: 200px;
+  margin-left: 25px;
+}
+
+.kubeimg{
+  width: 250px;
+  height: 250px;
+}
+
+.small-flex {
+  float: left;
+}
+#small-flex {
+  float: right;
+  font-size: 30px;
+}
+.small-flex {
+    display: flex;
+}
+
+.flex-child:first-child {   
+  margin-right: 20px;
+}
+
+.green {
+  text-align: center;
+  margin-left: 30px;
+}
+
+p {
+  width: 900px;
+  font-size: 40px;
+  color: #00539CFF;
+}
+
+.paws {
+  margin-top: 8%;
+  margin-left: 2%;
+}
+
+.pcka {
+  margin-top: 11%;
+}
+
+.pgcp {
+  margin-top: 8%;
+  margin-left: 4%;
+}
+
+.paaa {
+  margin-top: 6.5%;
+  margin-left: 2%;
+}
+
+h1 {
+  font-size: 60px;
+  color: #00539CFF;
+}

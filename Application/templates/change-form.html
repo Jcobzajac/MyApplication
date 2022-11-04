@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/changeform.css">
+    <title>Document</title>
+</head>
+<body>
+    {% include 'nav.html' %}
+    <form class="form" method="post">
+        <h1> Update </h1>
+        <div class="form-control">
+            <label for="first_place" id="label-first_place">
+                First Place
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="first_place">
+                <option value="Certified Kubernetes Administrator">Certified Kubernetes Administrator</option>
+                <option value="Azure Administrator Associate">Azure Administrator Associate</option>
+                <option value=" Google Cloud Associate Cloud Engineer">
+                  Google Cloud Associate Cloud Engineer
+                </option>
+                <option value="AWS Certified Solutions Architect">AWS Certified Solutions Architect</option>
+            </select>
+        </div>
+        <div class="form-control">
+          <label for="second_place" id="second_place">
+              Second Place
+          </label>
+           
+          <!-- Dropdown options -->
+          <select name="second_place" id="second_place">
+            <option value="Certified Kubernetes Administrator">Certified Kubernetes Administrator</option>
+            <option value="Azure Administrator Associate">Azure Administrator Associate</option>
+            <option value=" Google Cloud Associate Cloud Engineer">
+              Google Cloud Associate Cloud Engineer
+            </option>
+            <option value="AWS Certified Solutions Architect">AWS Certified Solutions Architect</option>
+          </select>
+      </div>
+      <div class="form-control">
+        <label for="third_place" id="third_place">
+            Third Place
+        </label>
+         
+        <!-- Dropdown options -->
+        <select name="third_place" id="third_place">
+            <option value="Certified Kubernetes Administrator">Certified Kubernetes Administrator</option>
+                <option value="Azure Administrator Associate">Azure Administrator Associate</option>
+                <option value=" Google Cloud Associate Cloud Engineer">
+                  Google Cloud Associate Cloud Engineer
+                </option>
+                <option value="AWS Certified Solutions Architect">AWS Certified Solutions Architect</option>
+        </select>
+    </div>
+    <div class="form-control">
+      <label for="fourth_place" id="fourth_place">
+          Fourth place
+      </label>
+       
+      <!-- Dropdown options -->
+      <select name="fourth_place" id="fourth_place">
+        <option value="Certified Kubernetes Administrator">Certified Kubernetes Administrator</option>
+        <option value="Azure Administrator Associate">Azure Administrator Associate</option>
+        <option value=" Google Cloud Associate Cloud Engineer">
+          Google Cloud Associate Cloud Engineer
+        </option>
+        <option value="AWS Certified Solutions Architect">AWS Certified Solutions Architect</option>
+      </select>
+    </div>
+  
+        <div class="form-control">
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+  
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+</html>

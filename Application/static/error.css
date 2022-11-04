@@ -1,0 +1,19 @@
+/* ERROR RESOLVER */
+
+body {
+    background-color: #fff;
+    font-family: Verdana;
+    text-align: center;
+}
+
+h1 {
+    font-size: 80px;
+    color: #00539CFF;
+}
+
+.wrapper {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
